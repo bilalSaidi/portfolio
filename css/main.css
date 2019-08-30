@@ -1,0 +1,302 @@
+html,
+body {
+font-family: 'Lato', sans-serif;
+  
+  font-size: 16px;
+}
+
+/* Genrale */
+
+
+/*  Start intro me */
+
+.intro-me {
+  position: fixed;
+  z-index: 1;
+  height: 600px;
+
+  width: calc(100vw - 5rem);
+  top: 2.5rem;
+  left: 2.5rem;
+  border-radius: 5px;
+
+  background: #DE6262;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFB88C, #DE6262);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+@media(max-width:767.98px){
+    .intro-me{
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 0;
+    }
+}
+.itnro-me-content{
+    padding: 5rem 0;
+}
+.itnro-me-content h3{
+    padding: 10px 16px;
+    color: #796363;
+    font-size: 40px;
+    position: relative;
+}
+.itnro-me-content h3 span{
+    color: #de6262;
+    font-size: 45px;
+}
+
+.itnro-me-content h3::after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 5rem;
+    background-color: #de6262;
+    top: 4.5rem;
+    left: 1.17rem;
+}
+.itnro-me-content h1 , 
+.itnro-me-content p ,
+.itnro-me-content .intro-social , 
+.itnro-me-content a{
+    color: #fff;
+    padding : 10px 16px;
+}
+
+.itnro-me-content .intro-social .intro-social-item , 
+.itnro-me-content a{
+    display: inline-block;
+}
+
+.itnro-me-content .intro-social-link , 
+.itnro-me-content .intro-social-talk{
+    color: #ffb88c;
+    border-radius: 50%;
+    background-color: #de6262;
+    box-shadow:  0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.123);
+    
+    
+}
+.itnro-me-content .intro-social-talk{
+    text-decoration: none;
+    border-radius: 5rem;
+    border : 2px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    
+}
+
+
+
+.intro-md-profile img {
+  width: 400px;
+  border-radius: 5px;
+  height: 500px;
+  position: relative;
+  top: 3rem;
+  left: 3rem;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.04);
+  
+}
+@media (max-width: 575.98px) {
+    .intro-md-profile{
+        width: 0 !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    .intro-md-profile img {
+        display: none;
+    }
+}
+
+/* End intro me */
+
+
+
+/* start section-main */
+
+.section-main{
+    position: relative;
+    z-index: 6;
+    
+    margin-top: 36.5rem;
+    padding: 0 30px;
+}
+
+@media(max-width:767.98px){
+    .section-main{
+        margin-top: -8rem;
+    }
+}
+
+.my-custom-container{
+    width: 90%;
+    padding-right : 0 !important ; 
+    padding-left: 0 !important;
+}
+
+.content{
+    background-color: #f9f9f9;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.123) ; 
+    border-radius: 5px;
+    
+
+}
+
+
+
+/* content-left */
+.content-left{
+    padding-right : 0 !important ; 
+    background-color: #333;
+    padding-left: 0 !important;
+    
+}
+.content-left .headding{
+    padding: 10px 15px;
+}
+.content-left .paragraphe{
+    text-align: justify;
+    padding: 10px 15px;
+    line-height: 1.8;
+    font-size: 17px;
+}
+.content-left .resume-intro{
+    border-top-left-radius: 5px;
+}
+.content-left .resume-experience{
+    background-color: #fff;
+    color: #333;
+}
+
+.content-left .resume-intro,
+.content-left .resume-education{
+    background-color: #333;
+    color: #fff;
+}
+.content-left .resume-intro,
+.content-left .resume-education,
+.content-left .resume-experience{
+    padding: 4rem 1.5rem;
+    position: relative;
+    z-index: 1;
+    
+   
+}
+
+/* content-right */
+.content-right{
+    
+    padding-left: 0 !important;
+    
+}
+
+
+.content-right .porfolio-header{
+    background-color: #ff895d;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    right: 130px;
+    background: linear-gradient(to right, #FFB88C, #DE6262);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.123);
+    text-align: center;
+    font-style: italic;
+    border-radius: 5px;
+    padding: 0.75rem 3rem;
+    z-index: 4;
+
+}
+
+.content-right .portfolio-item{
+    overflow-x: hidden;
+}
+.content-right .porfolio-header h3{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.content-right .portfolio-content .project1 ,
+.content-right .portfolio-content .project2,
+.content-right .portfolio-content .project3{
+    background-size: cover;
+    height: 500px;
+    background-position: top center;
+    cursor: pointer;
+    transition: .5s all ease-in-out;
+    
+}
+.content-right .portfolio-content .project1{
+        background-image: url("../images/bilalwebproject.png");
+}
+.content-right .portfolio-content .project2{
+        background-image: url("../images/company.png");
+}
+.content-right .portfolio-content .project3{
+        background-image: url("../images/dadaproject.png");
+
+}
+
+
+
+.content-right .portfolio-content .portfolio-item-review img{
+    
+    transition: .5s all ease-in-out;
+}
+
+
+.content-right .portfolio-content .portfolio-item-review img:hover{
+    transform: scale(1.15);
+    
+}
+
+
+
+/* Start Footer */
+
+.footer{
+    position: relative;
+    z-index: 5;
+    background-color: #fff;
+    color: #333;
+    padding: 15px 10px;
+    font-size: 20px;
+
+}
+
+.footer i {
+
+    font-size: 16px;
+}
+.footer  i.heart{
+
+    color: #c94747;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+
+/* End Footer */
+
+/* Custom Media */
+
+@media (min-width : 768px  ) and (max-width: 900px){
+    .intro-md-profile img{
+        left: 0rem;
+    }
+}
+
+@media (min-width : 992px  ){
+    .intro-md-profile img{
+        left: -2rem;
+    }
+}
+
+
+
+
+
